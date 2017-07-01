@@ -3,11 +3,12 @@
 <script type="text/javascript">
 $(document).ready(function(){
     $('#images').on('change',function(){
-
-        var imgVal = $('#images').val(); 
-        if(imgVal=='') alert("empty input file"); 
-        else
+        var imgVal = $('#images').val(),
+           imgPreview = $("#images_preview"); 
+        imgPreview.html("");
+        if(imgVal!='') 
         {
+            imgPreview.html('<center><i class="fa fa-spinner fa-4x fa-spin"></i></center>');
             $('#multiple_upload_form').ajaxForm({
                 target:'#images_preview',
                 beforeSubmit:function(e){

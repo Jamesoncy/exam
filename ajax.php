@@ -25,7 +25,7 @@ $run = mysql_query("SELECT * FROM picture ORDER BY id DESC LIMIT ".$postnumbers.
         ?>
 	                <div class="portfolio-item cat2 cat4">
                         <div class="thumb">
-                            <img src="<?php echo $image_src;?>" alt="" style ="height: 300px !important">
+                            <img src="<?php echo $image_src;?>" alt="" class = 'photo' style ="height: 300px !important">
                             <div class = "portfolio-hover">
                                 <div class="action-btn">
                                     <a href="<?php echo $image_src;?>" data-lightbox="<?php echo $id;?>" data-title="<?php echo $caption;?>"><i class="icon-basic_magnifier"></i></a>

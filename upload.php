@@ -57,7 +57,7 @@ if($_POST['image_form_submit'] == 1)
 		
 				<div class="portfolio-item cat1 cat3 ">
 		            <div class="thumb">
-		                <img src="<?php echo $image_src; ?>" alt="" style ="height: 300px !important">
+		                <img  class = 'photo' src="<?php echo $image_src; ?>" alt="" style ="height: 300px !important">
 		              
 		            </div>
 		            <div id = "<?php echo $form;?>">
